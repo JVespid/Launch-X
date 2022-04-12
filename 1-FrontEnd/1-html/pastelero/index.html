@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../stl.css">
+</head>
+<body>
+    <script>
+        const Borrar = (a) => {
+
+            if (a==1) 
+                alert("borrado correctamente")
+            else if(a==2)
+                alert("guardado correctamente")
+            else if(a==3)
+                alert("guardado correctamente")
+        }
+    </script>
+
+    <header>
+
+        <div class="navegacion">
+            <nav class="nav">
+                <a href="../index.html">Regresar</a>
+                <a href="#formulario">Formulario</a>
+                <a href="#form-pasteles">Editar Pasteles </a>
+                <a href="#form-adornos">Editar Adornos</a>
+            </nav>
+            <hr>
+        </div>
+
+    </header>
+
+
+
+    <section>
+
+
+        <article>
+            <div class="encavezado">
+                <h1>Actualizar Menu</h1>
+            </div>
+        </article>
+
+        <hr>
+
+        <article class = "contenedor-form" id="formulario">
+
+            <div class="form-titulo">
+                <h2>
+                    Ingresa los datos que cambiaras
+                </h2>
+                <p>Ingresa un valor diferente en los datos quen quieres cambiar</p>
+            </div>
+
+            
+            <div class="formulario">
+
+                <hr>
+
+                <div id="form-pasteles">
+
+                    <h2>Formulario de cambios de Pasteles</h2>
+
+                    
+                    <div class="preguntas">
+                        <label for="input-1">El numero del elemento que quieres cambiar</label>
+                        <input  id="input-1 input1" type="number" placeholder="00" value="2">
+                    </div>
+
+
+                    
+                    <div class="preguntas">
+                        <label for="input-2">Ingresa el nuevo nombre del articulo a modificar</label>
+                        <input  id="input-2 input1" type="text" placeholder="Ingresa un valor" value="Pastel de Chocolate">
+                    </div>
+
+
+                    
+                    <div class="preguntas">
+                        <label for="input-3">Ingresa la nueva descripcion del objeto a cambiar</label>
+                        <input  id="input-3 input1" type="text" placeholder="Ingresa un valor" value="Pastel con masa de chocolate horneado de forma tradicional con adornos de chocolate por arriba ">
+                    </div>
+                    
+
+                    
+                    <div class="preguntas">
+                        <label for="input-4">Selecciona la nueva imagen del producto</label>
+                        <input  id="input-4" type="file" placeholder="Ingresa un valor" value="">
+                    </div>
+
+                    
+                    
+                    <div class="botones">
+                        <input type="button" value="Guardar cambios" onclick = "Borrar(2);" >
+                        <input type="button" value="Eliminar producto" onclick = "Borrar(1);" >
+                        <input type="button" value="Agregar Producto" onclick = "Borrar(3);" >
+                    </div>
+
+
+                </div>
+<hr>
+
+
+                <div id="form-adornos">
+
+
+
+                    <h2>Formulario de cambios de Adornos</h2>
+
+
+                    
+                    <div class="preguntas">
+                        <label for="input-1">El numero del elemento que quieres cambiar</label>
+                        <input  id="input-1" type="number" placeholder="00" value="2">
+                    </div>
+
+
+                    
+                    <div class="preguntas">
+                        <label for="input-2">Ingresa el nuevo nombre del adorno a modificar</label>
+                        <input  id="input-2" type="text" placeholder="Ingresa un valor" value="Estrella de chocolate">
+                    </div>
+
+
+                    
+                    <div class="preguntas">
+                        <label for="input-3">Ingresa la nueva descripción del adorno a cambiar</label>
+                        <input  id="input-3" type="text" placeholder="Ingresa un valor" value="Pieza  de chocolate con forma de estrella">
+                    </div>
+
+
+                    
+                    <div class="preguntas">
+                        <label for="input-4">Selecciona la nueva imagen del adorno</label>
+                        <input  id="input-4" type="file" placeholder="Ingresa un valor" >
+                    </div>
+
+
+                    
+                    <div class="botones">
+                        <input type="button" value="Guardar cambios" onclick = "Borrar(2);" >
+                        <input type="button" value="Eliminar producto" onclick = "Borrar(1);" >
+                        <input type="button" value="Agregar Producto" onclick = "Borrar(3);" >
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </article>
+    </section>
+    
+
+</body>
+</html>
